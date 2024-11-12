@@ -1,0 +1,41 @@
+<circuit version="1.1.0-SR1" rev="" stepSize="1000000" stepsPS="1000000" NLsteps="100000" reaStep="1000000" animate="1" >
+
+<item itemtype="MCU" CircId="p16f877-23" mainComp="false" Show_id="true" Show_Val="false" Pos="-652,-408" rotation="0" hflip="1" vflip="1" label="pic16f877-1" idLabPos="0,-20" labelrot="0" valLabPos="0,0" valLabRot="0" Frequency="20 MHz" Program="../../../../MPLABXProjects/tarefa5b.X/dist/default/production/tarefa5b.X.production.hex" Auto_Load="false" saveEepr="true" Clk_Out="false" MainMcu="true" eeprom="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0," SerialMon="-1" />
+
+<item itemtype="Fixed Voltage" CircId="Fixed Voltage-505" mainComp="false" Show_id="false" Show_Val="false" Pos="-732,-400" rotation="0" hflip="1" vflip="1" label="Fixed Voltage-505" idLabPos="-64,-24" labelrot="0" valLabPos="-16,8" valLabRot="0" Voltage="5 V" Out="true" />
+
+<item itemtype="Stepper" CircId="Stepper-514" mainComp="false" Show_id="true" Show_Val="false" Pos="-448,-284" rotation="0" hflip="1" vflip="1" label="Stepper-514" idLabPos="-32,-62" labelrot="0" valLabPos="-14,36" valLabRot="0" Bipolar="false" Steps="32" Resistance="100 Ω" />
+
+<item itemtype="Push" CircId="Push-516" mainComp="false" Show_id="false" Show_Val="false" Pos="-692,-320" rotation="90" hflip="1" vflip="1" label="Push-516" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Norm_Close="false" Poles="1" />
+
+<item itemtype="Ground" CircId="Ground-517" mainComp="false" Show_id="false" Show_Val="false" Pos="-692,-268" rotation="0" hflip="1" vflip="1" label="Ground-517" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Resistor" CircId="Resistor-518" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="-692,-372" rotation="90" hflip="1" vflip="1" label="Resistor-518" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="100 Ω" />
+
+<item itemtype="Node" CircId="Node-519" mainComp="false" Pos="-692,-400" />
+
+<item itemtype="Node" CircId="Node-521" mainComp="false" Pos="-692,-344" />
+
+<item itemtype="Connector" uid="Connector-757" startpinid="p16f877-23-PORTD3" endpinid="Stepper-514-PinB2" pointList="-596,-256,-536,-256,-536,-252,-520,-252" />
+
+<item itemtype="Connector" uid="Connector-758" startpinid="p16f877-23-PORTD2" endpinid="Stepper-514-PinA2" pointList="-596,-248,-544,-248,-544,-268,-520,-268" />
+
+<item itemtype="Connector" uid="Connector-760" startpinid="p16f877-23-PORTD0" endpinid="Stepper-514-PinA1" pointList="-660,-256,-676,-256,-676,-220,-560,-220,-560,-316,-520,-316" />
+
+<item itemtype="Connector" uid="Connector-761" startpinid="p16f877-23-PORTD1" endpinid="Stepper-514-PinB1" pointList="-660,-248,-668,-248,-668,-228,-568,-228,-568,-300,-520,-300" />
+
+<item itemtype="Connector" uid="Connector-762" startpinid="Resistor-518-lPin" endpinid="Node-519-1" pointList="-692,-388,-692,-400" />
+
+<item itemtype="Connector" uid="Connector-763" startpinid="Fixed Voltage-505-outnod" endpinid="Node-519-0" pointList="-716,-400,-692,-400" />
+
+<item itemtype="Connector" uid="Connector-764" startpinid="Node-519-2" endpinid="p16f877-23-MCLR" pointList="-692,-400,-660,-400" />
+
+<item itemtype="Connector" uid="Connector-766" startpinid="Push-516-switch0pinN" endpinid="Ground-517-Gnd" pointList="-692,-304,-692,-284" />
+
+<item itemtype="Connector" uid="Connector-771" startpinid="p16f877-23-PORTC0" endpinid="Node-521-1" pointList="-660,-288,-676,-288,-676,-344,-692,-344" />
+
+<item itemtype="Connector" uid="Connector-772" startpinid="Resistor-518-rPin" endpinid="Node-521-0" pointList="-692,-356,-692,-344" />
+
+<item itemtype="Connector" uid="Connector-773" startpinid="Node-521-2" endpinid="Push-516-pinP0" pointList="-692,-344,-692,-336" />
+
+</circuit>

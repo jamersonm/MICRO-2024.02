@@ -1,0 +1,41 @@
+<circuit version="1.1.0-SR1" rev="" stepSize="1000000" stepsPS="500000" NLsteps="100000" reaStep="1000000" animate="1" >
+
+<item itemtype="MCU" CircId="p16f877-23" mainComp="false" Show_id="true" Show_Val="false" Pos="-652,-408" rotation="0" hflip="1" vflip="1" label="pic16f877-1" idLabPos="0,-20" labelrot="0" valLabPos="0,0" valLabRot="0" Frequency="20 MHz" Program="../../../../MPLABXProjects/tarefa8b.X/dist/default/production/tarefa8b.X.production.hex" Auto_Load="false" saveEepr="true" Clk_Out="false" MainMcu="true" eeprom="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0," SerialMon="-1" />
+
+<item itemtype="Fixed Voltage" CircId="Fixed Voltage-505" mainComp="false" Show_id="false" Show_Val="false" Pos="-696,-400" rotation="0" hflip="1" vflip="1" label="Fixed Voltage-505" idLabPos="-64,-24" labelrot="0" valLabPos="-16,8" valLabRot="0" Voltage="5 V" Out="true" />
+
+<item itemtype="Ground" CircId="Ground-752" mainComp="false" Show_id="false" Show_Val="false" Pos="-760,-152" rotation="0" hflip="1" vflip="1" label="Ground-752" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Voltage Source" CircId="Voltage Source-791" mainComp="false" ShowProp="MaxValue" Show_id="false" Show_Val="true" Pos="-812,-384" rotation="0" hflip="1" vflip="1" label="Voltage Source-791" idLabPos="-32,-48" labelrot="0" valLabPos="-8,30" valLabRot="0" Running="true" Value_Volt="1.225 V" MaxValue="5 V" MinValue="0 V" />
+
+<item itemtype="Tunnel" CircId="Tunnel-792" mainComp="false" Show_id="false" Show_Val="false" Pos="-688,-344" rotation="0" hflip="1" vflip="1" label="Tunnel-792" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Name="E0" IsBus="false" />
+
+<item itemtype="Tunnel" CircId="Tunnel-793" mainComp="false" Show_id="false" Show_Val="false" Pos="-688,-336" rotation="0" hflip="1" vflip="1" label="Tunnel-793" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Name="E1" IsBus="false" />
+
+<item itemtype="Led" CircId="Led-794" mainComp="false" Show_id="false" Show_Val="false" Pos="-760,-204" rotation="90" hflip="1" vflip="1" label="Led-794" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Color="Yellow" Grounded="false" Threshold="2.4 V" MaxCurrent="30 mA" Resistance="0.6 Ω" />
+
+<item itemtype="Resistor" CircId="Resistor-795" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="-712,-272" rotation="0" hflip="1" vflip="1" label="Resistor-795" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="100 Ω" />
+
+<item itemtype="Oscope" CircId="Oscope-796" mainComp="false" Show_id="false" Show_Val="false" Pos="-472,-320" rotation="-360" hflip="1" vflip="1" label="Oscope-796" idLabPos="-90,-100" labelrot="0" valLabPos="-16,20" valLabRot="0" Basic_X="135 _px" Basic_Y="135 _px" BufferSize="600000" connectGnd="true" InputImped="10 MΩ" TimDiv="16548925" TimPos="0,0,0,0," VolDiv="1,1,1,1," Tunnels=",,,," Trigger="3" Filter="0.1 V" AutoSC="4" Tracks="1" HideCh="false,false,false,false," VolPos="0,0,0,0," />
+
+<item itemtype="Node" CircId="Node-797" mainComp="false" Pos="-680,-272" />
+
+<item itemtype="Connector" uid="connector-821" startpinid="Fixed Voltage-505-outnod" endpinid="p16f877-23-MCLR" pointList="-680,-400,-660,-400" />
+
+<item itemtype="Connector" uid="Connector-839" startpinid="Voltage Source-791-outPin" endpinid="p16f877-23-PORTA3" pointList="-784,-368,-660,-368" />
+
+<item itemtype="Connector" uid="Connector-840" startpinid="Tunnel-792-pin" endpinid="p16f877-23-PORTE0" pointList="-688,-344,-660,-344" />
+
+<item itemtype="Connector" uid="Connector-841" startpinid="Tunnel-793-pin" endpinid="p16f877-23-PORTE1" pointList="-688,-336,-660,-336" />
+
+<item itemtype="Connector" uid="Connector-843" startpinid="Resistor-795-lPin" endpinid="Led-794-lPin" pointList="-728,-272,-760,-272,-760,-220" />
+
+<item itemtype="Connector" uid="Connector-844" startpinid="Led-794-rPin" endpinid="Ground-752-Gnd" pointList="-760,-188,-760,-168" />
+
+<item itemtype="Connector" uid="Connector-845" startpinid="Oscope-796-Pin3" endpinid="Node-797-1" pointList="-560,-272,-572,-272,-572,-204,-680,-204,-680,-272" />
+
+<item itemtype="Connector" uid="Connector-846" startpinid="p16f877-23-PORTC2" endpinid="Node-797-0" pointList="-660,-272,-680,-272" />
+
+<item itemtype="Connector" uid="Connector-847" startpinid="Node-797-2" endpinid="Resistor-795-rPin" pointList="-680,-272,-696,-272" />
+
+</circuit>

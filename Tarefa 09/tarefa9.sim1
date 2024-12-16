@@ -1,0 +1,31 @@
+<circuit version="1.1.0-SR1" rev="" stepSize="1000000" stepsPS="1000000" NLsteps="100000" reaStep="1000000" animate="0" >
+
+<item itemtype="MCU" CircId="p16F877-1" mainComp="false" Show_id="true" Show_Val="false" Pos="-52,-108" rotation="0" hflip="1" vflip="1" label="p16F877-1" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" Frequency="20 MHz" Program="../../../../MPLABXProjects/tarefa9.X/dist/default/production/tarefa9.X.production.hex" Auto_Load="false" saveEepr="true" Clk_Out="false" MainMcu="true" SerialMon="-1" />
+
+<item itemtype="Fixed Voltage" CircId="Fixed Voltage-2" mainComp="false" Show_id="false" Show_Val="false" Pos="-208,-100" rotation="0" hflip="1" vflip="1" label="Fixed Voltage-2" idLabPos="-64,-24" labelrot="0" valLabPos="-16,8" valLabRot="0" Voltage="5 V" Out="true" />
+
+<item itemtype="Resistor" CircId="Resistor-3" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="-96,44" rotation="0" hflip="1" vflip="1" label="Resistor-3" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="100 Ω" />
+
+<item itemtype="Led" CircId="Led-4" mainComp="false" Show_id="false" Show_Val="false" Pos="-132,-4" rotation="90" hflip="1" vflip="1" label="Led-4" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Color="Yellow" Grounded="false" Threshold="2.4 V" MaxCurrent="30 mA" Resistance="0.6 Ω" />
+
+<item itemtype="Oscope" CircId="Oscope-6" mainComp="false" Show_id="false" Show_Val="false" Pos="144,-16" rotation="0" hflip="1" vflip="1" label="Oscope-6" idLabPos="-90,-100" labelrot="0" valLabPos="-16,20" valLabRot="0" Basic_X="135 _px" Basic_Y="135 _px" BufferSize="600000" connectGnd="true" InputImped="10 MΩ" TimDiv="572098108079" TimPos="0,0,0,0," VolDiv="1,1,1,1," Tunnels=",,,," Trigger="0" Filter="0.1 V" AutoSC="4" Tracks="1" HideCh="false,false,false,false," VolPos="0,0,0,0," />
+
+<item itemtype="Node" CircId="Node-5" mainComp="false" Pos="-132,-100" />
+
+<item itemtype="Node" CircId="Node-7" mainComp="false" Pos="-68,44" />
+
+<item itemtype="Connector" uid="Connector-2" startpinid="Led-4-rPin" endpinid="Resistor-3-lPin" pointList="-132,12,-132,44,-112,44" />
+
+<item itemtype="Connector" uid="Connector-3" startpinid="Led-4-lPin" endpinid="Node-5-1" pointList="-132,-20,-132,-100" />
+
+<item itemtype="Connector" uid="Connector-4" startpinid="Fixed Voltage-2-outnod" endpinid="Node-5-0" pointList="-192,-100,-132,-100" />
+
+<item itemtype="Connector" uid="Connector-5" startpinid="Node-5-2" endpinid="p16F877-1-MCLR" pointList="-132,-100,-60,-100" />
+
+<item itemtype="Connector" uid="Connector-7" startpinid="Oscope-6-Pin0" endpinid="Node-7-1" pointList="56,-64,16,-64,16,72,-68,72,-68,44" />
+
+<item itemtype="Connector" uid="Connector-8" startpinid="Resistor-3-rPin" endpinid="Node-7-0" pointList="-80,44,-68,44" />
+
+<item itemtype="Connector" uid="Connector-9" startpinid="Node-7-2" endpinid="p16F877-1-PORTD0" pointList="-68,44,-60,44" />
+
+</circuit>
